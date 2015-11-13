@@ -10,10 +10,10 @@ Settings to create a Docker image for a simple Flask project. This project has b
 docker build -t simple_flask .
 ```
 
-The Docker file creates a container starting from Ubuntu 14.04:
+The Docker file creates a container starting from the latest version of Ubuntu:
 
 ```
-FROM ubuntu:14.04
+FROM ubuntu:latest
 ```
 
 then it installs Python:
@@ -55,7 +55,7 @@ docker images
 ## Run Docker Container
 
 ```
-docker run -it -p 5000:00 simple_flask /deployment/env/bin/python /deployment/start.py
+docker run -it -p 5000:00 simple_flask /deploy/env/bin/python /deploy/start.py
 ```
 
 This command executes the simple Python script contained in the project to import the main Flask app and run it:
