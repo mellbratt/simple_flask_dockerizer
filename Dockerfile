@@ -1,5 +1,5 @@
 # Create a container from Ubuntu.
-FROM ubuntu:latest
+FROM ubuntu:14.04
 
 # Credits.
 # MAINTAINER Guido Barbaglia "guido.barbaglia@gmail.com"
